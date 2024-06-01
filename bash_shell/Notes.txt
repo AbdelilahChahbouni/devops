@@ -1,0 +1,21 @@
+-Lesson 1:
+	-types of sheles
+		-bash ==> Bource Again Shell:
+			-Bash is a command Line Interpreter 
+			-Bash script is a series of commands written in file
+				-the command is read and execute by bash program
+				-The program execute Line by Line
+		-ZSH
+		-Ksh
+		-Csh
+
+-Lesson 2:
+	-scripting basics:
+		-How To create shell script:
+			-create file whit vim or nano have script.sh
+			-the file script start whit #!/bin/bash
+			-change file permission +x
+			-and run script ./script.sh
+		-cat /etc/shells 
+		-which bash
+		-file script.sh
