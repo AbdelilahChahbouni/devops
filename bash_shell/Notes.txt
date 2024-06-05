@@ -19,3 +19,28 @@
 		-cat /etc/shells 
 		-which bash
 		-file script.sh
+	-Exit Status:
+		echo $?
+	-predefine variables:
+		-$0 get name runing script
+		-$# get number of arguments passed to script
+		-$* print all arguments
+		-$1-$9 select value of one argument from 1 to 9
+		-$! get process id run in background 
+	-Arthmetic Operators:
+		- + * / ++ -- **
+		- $((a + b)) or let=a+b
+	-Comprison Operators:
+		- > < >= <= == !=
+
+	-Command Substitution:
+		-files=$(command) like files=$(ls)
+		-files=`ls` ==> backtick
+	-Braces Expansion:
+		-{str1,str2,str3}
+		-{start..end} ==> {1..5} = 1 2 3 4 5
+
+	
+	
+
+
