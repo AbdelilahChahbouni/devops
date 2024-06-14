@@ -40,7 +40,71 @@
 		-{str1,str2,str3}
 		-{start..end..+2} ==> {1..5} = 1 2 3 4 5
 
-	
-	
+	-read input from user:
+		-read name
+		-p , -s , -t ,-n
+	-conditional operators:
+		-comparison operators for numerical values:
+			-eq = equal
+			-ne = not equal
+			-gt = greather then
+			-lt = less then
+			-ge = greather equal 
+			-le = less equal
+		-comparison operators for string:
+			- = , > , < , != , -z this for empty string
+		- logical opertors:
+			-&& , || , !
+		
+		- file Operators:
+			-e file exists
+			-f is a file	
+			-d is directory
+			-r readable
+			-w writable
+			-x exuctable
+		-conditional operator:
+			-single Brackets [..]
+			-double brackets [[..]]
+	-if statments:
+		- if [ condition ] then
+			block code
+		  fi
+		- if [ condition ] then
+			block code
+		  else
+		  	block code
+		  fi
+		- if [ condition ] then
+			block code
+		  elif [ condition ] then
+		  	block code
+		  else
+		  	block code 
+		  fi
+	-Regular experssion:
+		- . Any Carcater
+		- * zero or more
+		- + one or more
+		- ? zero or one
+		- ^ start whit string
+		- $ end whit string
+		- \ skip carcter 
+-lesson3:
+	-Case Statments:
+		case expression in:
+			pattern1)
+				block code
+				;;
+			pattern2)
+				block code
+				;;
+			*)
+				block code
+				;;
+		esac
+
+
+ 	
 
 
