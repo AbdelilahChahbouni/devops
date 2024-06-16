@@ -103,7 +103,26 @@
 				block code
 				;;
 		esac
+	-Arrays:
+		- arr=(val1 val2 val3) declare array
+		- arr=() empty array
+		- ${arr[2]} get element by index 2
+		- ${arr[@]} get all elements of Arrays
+		- ${#arr[@]} get size of Arrays
+		- ${!arr[@]} get index of elements
+		- arr+=(new_element) add new element to array
+		- unset arry[2] remove element of id 2
+		- ${arr[@]:start:end} slicing array
+		- assosiative array 
+			- decalre -A name_arr === declre of assosiative array
+			- arr[key1]=value1 === add value to assosiative array
+	-for loop:
+		- for variable in list
+		  do 
+			block code 
+		  done
 
+		
 
  	
 
