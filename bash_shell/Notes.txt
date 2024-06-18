@@ -121,6 +121,12 @@
 		  do 
 			block code 
 		  done
+	-while loop:
+		- while [condition]
+			do
+				block code
+			done
+			
 
 		
 
