@@ -126,7 +126,24 @@
 			do
 				block code
 			done
-			
+	-shift command:
+		shift n 
+		n ==> number of shift argument 
+	-read files:
+		method one:
+			while IFS= read -r Line
+			do
+				commands
+			done
+	-until loop:
+		until [condition false]
+		do	
+			code block
+		done
+
+		
+
+			 
 
 		
 
