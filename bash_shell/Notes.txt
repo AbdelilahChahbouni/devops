@@ -140,7 +140,16 @@
 		do	
 			code block
 		done
-
+-lesson4:
+	-function:
+		function func_name {
+			code
+		}
+	or
+		func_name() {
+			code
+		}
+		
 		
 
 			 
