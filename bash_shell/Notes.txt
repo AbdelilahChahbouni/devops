@@ -150,6 +150,22 @@
 			code
 		}
 		
+	-Sed command:
+		-replacing and substituting
+			-sed 's/old word/new word/' input file ==> replace first word
+			-sed 's/old word/new word/2' input file ==> replace 1 , 2 word 
+			-sed 's/old word/new word/g' input file ==> replace all words 
+			-sed '1s/old word/new word/g' input file ==> replace all in first Line
+			-sed 's/^old word/new word/g' input file ==> replace all start with specific word
+			-sed 's/old word$/new word/g' input file ==> replace all end whit specific word 
+		-sed Operators:
+			-sed 's/old/new/p' input_file ==> Duplicating the Replacing lines
+			-sed -n 's/old/new/p' input_file ==> Printing the Replacing lines
+			-sed 's/word/ d' input_file ==> remove the line a contain this word 
+			-sed -e 'sed_command1' -e 'sed_command2' input_file ==> execute multiple commands at once
+			-sed -f 'sed_commands' input_file ==> read commands from a file
+			-sed -i 's/old/new/' input_file ==> use -i to save the modification on original file
+			
 		
 
 			 
