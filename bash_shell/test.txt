@@ -1,7 +1,5 @@
-this is my best way to learn python test
-
-can i help you my friend test test
-
-this is test all
-
-new this is
+one
+two
+three
+four
+five

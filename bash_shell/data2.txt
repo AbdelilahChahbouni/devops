@@ -1,0 +1,10 @@
+pulse:x:124:131:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:125:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:126:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:127:133:Gnome Display Manager:/var/lib/gdm3:/bin/false
+local-host:x:1000:1000:local-host,,,:/home/local-host:/usr/bin/zsh
+fwupd-refresh:x:128:136:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+mysql:x:129:137:MySQL Server,,,:/nonexistent:/bin/false
+postgres:x:130:138:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+redis:x:131:140::/var/lib/redis:/usr/sbin/nologin
+reda:x:1001:1003::/home/reda:/bin/sh

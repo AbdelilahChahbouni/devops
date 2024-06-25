@@ -1,0 +1,7 @@
+Name    	Dep 		Salary
+nada    	account         1000
+reda		account		2000
+taha		sales		3000
+hamid 		development 	1500
+said		HR 		1122
+walid 		devops		2200
