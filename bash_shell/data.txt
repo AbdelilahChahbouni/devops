@@ -1,4 +1,3 @@
-Name    	Dep 		Salary
 nada    	account         1000
 reda		account		2000
 taha		sales		3000

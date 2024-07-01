@@ -186,6 +186,26 @@
 			-awk ' $1 ~ /match pattern/ { commands }' file.txt ==> search by filed
 			-awk ' $3 ~ /1000/ {print $0} ' data.txt
 			-awk ' $3 !~ /1000/ {print $0} ' data.txt
+		-comparison operation:
+			-awk ' BEGIN{OFS= " ---> "} $3 > 2000 { print $1 , $3} ' data.txt
+			-awk ' BEGIN{OFS= " ---> "} $3 == 2000 { print $1 , $3} ' data.txt
+			-awk ' BEGIN{ total=0 } { total+=$3 } END{ print "the total of salaries = " , total }' data.txt
+		-arithmatic operations:
+			-awk 'BEGIN{ print 5+5 }'
+			-awk 'BEGIN{ print 5*5 }'
+			-awk 'BEGIN{ print 5/5 }'
+			-awk 'BEGIN{ a=1 ; c=6 ; d=a+c ; print d }'
+			-awk ' BEGIN{ total=0 } { total+=$3 } END{ print "the total of salaries = " , total/NR }' data.txt
+		-if statment:
+			-awk '{ if(condition) { block code} else { block code } }' input_file
+		-for loop :
+			- awk '{
+				for(variable in collection){
+					action by line
+				}
+			}' input_file
+		
+
 
 
 
