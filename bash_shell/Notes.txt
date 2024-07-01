@@ -180,8 +180,14 @@
 		-OFS ==> Output Field Separator default space
 		-RS ==> Record Separator default new line
 		-ORS ==> Output Record Separator
+	-awk operations:
+		-search function:
+			-awk ' /match pattern/ ' file.txt ==> search by line 
+			-awk ' $1 ~ /match pattern/ { commands }' file.txt ==> search by filed
+			-awk ' $3 ~ /1000/ {print $0} ' data.txt
+			-awk ' $3 !~ /1000/ {print $0} ' data.txt
 
-		
+
 
 
 
