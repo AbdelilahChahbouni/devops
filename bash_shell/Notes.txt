@@ -215,6 +215,8 @@
 			-at 10am next week -f script_name	
 			-at 10am tomorrow -f script_name				
 			-at 10am 12.10.2024 -f script_name
+		-crontab command:
+			-* * * * * 
 
 
 
