@@ -204,7 +204,17 @@
 					action by line
 				}
 			}' input_file
-		
+	-lesson5:
+		-at command:
+			-at time
+			-atq ==> list the job or at -l  
+			-atrm ==> to remove a job
+			-at time -f script
+			-at now + 5min -f script_name
+			-at 10am tomorrow -f script_name
+			-at 10am next week -f script_name	
+			-at 10am tomorrow -f script_name				
+			-at 10am 12.10.2024 -f script_name
 
 
 
