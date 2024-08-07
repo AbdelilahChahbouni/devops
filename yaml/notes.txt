@@ -1,2 +1,34 @@
 yaml course:
 1-yaml is data serialisition language used for data tranfer between diffrent application
+2-Basics Rules of yaml:
+   -yaml works well in any of the following:
+	-Configuration files
+	-Log files
+	-Inter-process massaging
+	-Cross-language data sharing
+   -The three primetive data structure in YAML
+	- Scalars(string,numbers,integer,float,boolean)
+	- Mappings(dictionaries)
+	- Sequences(lists,arrays)
+
+   -yaml use --- to start document and ... to end document
+	---
+		content
+	...
+   -yaml data structure:
+	*scalars: key-value paire
+		ex:
+	  		person: reda
+	*mapping
+		ex:
+			person:
+			  name: reda
+			  age: 20
+	*squence:
+		ex:
+		  	person:
+			  - reda
+			  - 20
+		          
+	
+		
