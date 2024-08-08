@@ -29,6 +29,24 @@ yaml course:
 		  	person:
 			  - reda
 			  - 20
-		          
+		        
+3- Advanced Faetures:
+	- > use greather then if value of key is string multi line and you want use it as one line
+	- | if value of key a string from mltiple line
+	- ? if key contain tow line or more
+	- & anchor as alise of content
+	- * to reade alias
+	ex1:
+	content: &text this is a text
+	new_text: *text
+	ex2:
+	- step: &id01
+		name: reda
+		age: 20
+		size: small
+	- step2:
+		>>: *id01 # >> merge used by list when use aliases
+		size: meduim
+ 
 	
 		
