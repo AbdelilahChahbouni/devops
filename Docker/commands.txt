@@ -1,0 +1,18 @@
+1-docker image pull imageName
+2-docker container create -it imageName bash # i = interact , t = tty or terminal
+3-docker container start -i containerName
+4-docker container stop containerName
+5-docker run -it imageName /bin/bash # make all this commands in one command
+6-docker ps -a # to display created containers
+7-docker run -d centos # -d = detach run container in background
+8-docker run -d centos sleep 20 # stop the container after 20 s in background
+9-docker exec -it container_id bash # log in to specific container
+10-docker rm container_name
+11-docker rmi image_name
+12-docker images
+13-dokcer ps # list runnig containers
+14-docker ps -a # list all containers
+
+
+
+
