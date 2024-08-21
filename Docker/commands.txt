@@ -14,5 +14,38 @@
 14-docker ps -a # list all containers
 
 
+docker networking Commands:
+1-docker network ls
+2-docker network create net_name
+3-docker network create --subnet 10.0.0.0/24 net_name
+4-docker network inspect net_name
+5-docker run -it --network net_name image_name
+6-docker network connect net_name cont_name
+7-docker network disconnect net_name cont_name
+
+docker container port:
+1-docker run -p 3000:80 nginx
+2-docker run -P nginx
+
+docker image:
+1-docker pull imageName:tag
+2-docker history image_name
+3-docker commit container_id new_image_name image:tag
+
+docker File:
+1-create file named Dockerfile
+2-docker build -t name-iamge . # . for location of docker file 
+3-EntryPoint , Maintainer , Expose 
+4-COPY , WORKDIR , ENV
+5- CMD ["/bin/sh" , "-c" , "${env1} ${env2}"] # how to use env variable in CMD statment
+
+docker volumes:
+1-docker volume create volume_name
+2-docker volume ls
+3-docker volume rm volume_name
+4-docker run -v valume_name:container_directory:ro image_name  # ro for read only
+
+
+
 
 
