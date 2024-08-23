@@ -44,6 +44,49 @@ docker volumes:
 2-docker volume ls
 3-docker volume rm volume_name
 4-docker run -v valume_name:container_directory:ro image_name  # ro for read only
+5-VOLUME /dockerfilevolume # create new volume using dockerFile
+
+Bind Mounting:
+1-docker run -d -it -v local-folder:docker-dir-folder
+2-docker run -d -it -v local-folder:docker-dir-folder:ro
+
+Sharing data between multiple containers:
+1-docker run -d --volume-from container1
+2-docker run -d --volume-from container1:ro
+
+Docker Compose:
+1-Docker compose file structure:
+	-version
+	-services
+	-build
+	-container_name
+	-Ports
+	-volumes
+2-Example:
+	version:`3`
+	services:
+	  database:
+	    image:mysql
+	    conatiner_name: dolfinEd
+	    volumes:
+	      -hostPath:containerPath
+	      -volumeName:containerPath
+          frontend:
+	    build:.
+            ports:
+	      -"3000:5000"
+	volumes:
+	  volumeName: {}
+3-Docker Compose Commands:
+  1-docker-compose build # to build the image
+  2-docker-compose run service-name # create container from image
+  3-docker-compose up # build image and start the cotainers
+  4-docker-compose -f fileName up
+  5-docker-compose up -d
+  6-docker-compose down # stop and remove all containers
+  7-docker-compose down --volume # stop and remove all containers with volumes
+
+
 
 
 
